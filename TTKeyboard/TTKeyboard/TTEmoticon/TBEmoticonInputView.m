@@ -10,6 +10,7 @@
 #import "TBEmotionCell.h"
 #import "TBEmotionFlowLayout.h"
 #import "TTKeyboard.h"
+#import <Masonry.h>
 
 static CGFloat lineCount = 3.0f;
 static NSString *itemIdentifier = @"emoticonItemIdentifier";
@@ -21,7 +22,6 @@ static NSString *itemIdentifier = @"emoticonItemIdentifier";
     NSInteger emotionCount;
 }
 @property (nonatomic, strong) NSArray   *emoArray;
-@property (nonatomic, strong) UIView    *emoticonView;
 @property (nonatomic, strong) UIButton  *sendBtn;
 @property (nonatomic, strong) UIPageControl     *pageControl;
 @property (nonatomic, strong) UICollectionView  *collectionView;
@@ -49,17 +49,9 @@ static NSString *itemIdentifier = @"emoticonItemIdentifier";
 
 - (void)setFrame:(CGRect)frame{
     [super setFrame:frame];
-    [_collectionView reloadData];
-}
-
-- (void)layoutSubviews{
-    [super layoutSubviews];
-    CGFloat _width = self.frame.size.width;
-    _emoticonView.frame = CGRectMake(0, 5, _width, k_emotionViewHeight);
-    _collectionView.frame = _emoticonView.bounds;
+    CGFloat _width = frame.size.width;
     _collectionView.contentSize = CGSizeMake(_width * _pageCount, k_emotionViewHeight);
-    _pageControl.frame = CGRectMake(60, CGRectGetMaxY(_emoticonView.frame), _width - 120, 20);
-    _sendBtn.frame = CGRectMake(_width - 60, TTEmotionViewHeight - 30, 60, 30);
+    [_collectionView reloadData];
 }
 
 - (void)getEmotionData{
@@ -76,13 +68,34 @@ static NSString *itemIdentifier = @"emoticonItemIdentifier";
 # pragma mark FaceEmoticon
 //表情视图
 - (void)setUpEmoticonView{
-    self.emoticonView = [[UIView alloc]initWithFrame:CGRectZero];
-    [self addSubview:_emoticonView];
     [self addSubview:self.collectionView];
     [self addSubview:self.pageControl];
     [self addSubview:self.sendBtn];
     _pageControl.numberOfPages = _pageCount;
+    [self setLayout];
     [self getEmotionData];
+}
+
+- (void)setLayout{
+    WS(ws);
+    [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws).with.offset(5);
+        make.left.equalTo(ws);
+        make.right.equalTo(ws);
+        make.height.mas_equalTo(k_emotionViewHeight);
+    }];
+    [_pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.collectionView.mas_bottom);
+        make.left.equalTo(ws).with.offset(60);
+        make.right.equalTo(ws).with.offset(-60);
+        make.height.mas_equalTo(20);
+    }];
+    [_sendBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.collectionView.mas_bottom);
+        make.left.equalTo(ws.pageControl.mas_right);
+        make.right.equalTo(ws);
+        make.bottom.equalTo(ws);
+    }];
 }
 
 - (void)nextPage{
@@ -206,7 +219,7 @@ static NSString *itemIdentifier = @"emoticonItemIdentifier";
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(self.emoticonView.frame.size.width/_listCount, k_emotionViewHeight/lineCount);
+    return CGSizeMake(self.collectionView.frame.size.width/_listCount, k_emotionViewHeight/lineCount);
 }
 
 #pragma mark -
