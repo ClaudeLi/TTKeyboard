@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1D7F1DC6FA6A99ED31DCEA /* libPods-TTKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A45B04D27565E0DEE4959FF6 /* libPods-TTKeyboard.a */; };
+		D3543A891DF53F3900BB9DDA /* TBKeyboardInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3543A841DF53F3900BB9DDA /* TBKeyboardInputBar.m */; };
+		D3543A8A1DF53F3900BB9DDA /* TBKeyboardTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3543A861DF53F3900BB9DDA /* TBKeyboardTextParser.m */; };
+		D3543A8B1DF53F3900BB9DDA /* TBKeyboardTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3543A881DF53F3900BB9DDA /* TBKeyboardTopView.m */; };
+		D3ED406C1DC8AFA1001B1051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED406B1DC8AFA1001B1051 /* main.m */; };
+		D3ED406F1DC8AFA1001B1051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED406E1DC8AFA1001B1051 /* AppDelegate.m */; };
+		D3ED40721DC8AFA1001B1051 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED40711DC8AFA1001B1051 /* ViewController.m */; };
+		D3ED40751DC8AFA1001B1051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ED40731DC8AFA1001B1051 /* Main.storyboard */; };
+		D3ED40781DC8AFA1001B1051 /* TTKeyboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3ED40761DC8AFA1001B1051 /* TTKeyboard.xcdatamodeld */; };
+		D3ED407A1DC8AFA2001B1051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ED40791DC8AFA2001B1051 /* Assets.xcassets */; };
+		D3ED407D1DC8AFA2001B1051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ED407B1DC8AFA2001B1051 /* LaunchScreen.storyboard */; };
+		D3ED40A11DC8B2DA001B1051 /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3ED40981DC8B2DA001B1051 /* EmoticonQQ.bundle */; };
+		D3ED40A21DC8B2DA001B1051 /* TBEmoticonInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED409A1DC8B2DA001B1051 /* TBEmoticonInputView.m */; };
+		D3ED40A31DC8B2DA001B1051 /* TBEmotionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED409C1DC8B2DA001B1051 /* TBEmotionFlowLayout.m */; };
+		D3ED40A41DC8B2DA001B1051 /* TBEmotionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED409E1DC8B2DA001B1051 /* TBEmotionCell.m */; };
+		D3ED40A51DC8B2DA001B1051 /* TBEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3ED409F1DC8B2DA001B1051 /* TBEmotionCell.xib */; };
+		D3ED40A81DC8B305001B1051 /* TTEmoticonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ED40A71DC8B305001B1051 /* TTEmoticonHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D643943C7491E0E1665ED3D /* Pods-TTKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTKeyboard/Pods-TTKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		A45B04D27565E0DEE4959FF6 /* libPods-TTKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4169E729C96BD0E8F7EED10 /* Pods-TTKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTKeyboard/Pods-TTKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		D3543A821DF50A4100BB9DDA /* TTKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTKeyboard.h; sourceTree = "<group>"; };
+		D3543A831DF53F3800BB9DDA /* TBKeyboardInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKeyboardInputBar.h; sourceTree = "<group>"; };
+		D3543A841DF53F3900BB9DDA /* TBKeyboardInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKeyboardInputBar.m; sourceTree = "<group>"; };
+		D3543A851DF53F3900BB9DDA /* TBKeyboardTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKeyboardTextParser.h; sourceTree = "<group>"; };
+		D3543A861DF53F3900BB9DDA /* TBKeyboardTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKeyboardTextParser.m; sourceTree = "<group>"; };
+		D3543A871DF53F3900BB9DDA /* TBKeyboardTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBKeyboardTopView.h; sourceTree = "<group>"; };
+		D3543A881DF53F3900BB9DDA /* TBKeyboardTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBKeyboardTopView.m; sourceTree = "<group>"; };
+		D3ED40671DC8AFA1001B1051 /* TTKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3ED406B1DC8AFA1001B1051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3ED406D1DC8AFA1001B1051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3ED406E1DC8AFA1001B1051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3ED40701DC8AFA1001B1051 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D3ED40711DC8AFA1001B1051 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3ED40741DC8AFA1001B1051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3ED40771DC8AFA1001B1051 /* TTKeyboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTKeyboard.xcdatamodel; sourceTree = "<group>"; };
+		D3ED40791DC8AFA2001B1051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3ED407C1DC8AFA2001B1051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3ED407E1DC8AFA2001B1051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3ED40981DC8B2DA001B1051 /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
+		D3ED40991DC8B2DA001B1051 /* TBEmoticonInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBEmoticonInputView.h; sourceTree = "<group>"; };
+		D3ED409A1DC8B2DA001B1051 /* TBEmoticonInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBEmoticonInputView.m; sourceTree = "<group>"; };
+		D3ED409B1DC8B2DA001B1051 /* TBEmotionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBEmotionFlowLayout.h; sourceTree = "<group>"; };
+		D3ED409C1DC8B2DA001B1051 /* TBEmotionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBEmotionFlowLayout.m; sourceTree = "<group>"; };
+		D3ED409D1DC8B2DA001B1051 /* TBEmotionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBEmotionCell.h; sourceTree = "<group>"; };
+		D3ED409E1DC8B2DA001B1051 /* TBEmotionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBEmotionCell.m; sourceTree = "<group>"; };
+		D3ED409F1DC8B2DA001B1051 /* TBEmotionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBEmotionCell.xib; sourceTree = "<group>"; };
+		D3ED40A61DC8B305001B1051 /* TTEmoticonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEmoticonHelper.h; sourceTree = "<group>"; };
+		D3ED40A71DC8B305001B1051 /* TTEmoticonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTEmoticonHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3ED40641DC8AFA1001B1051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1D7F1DC6FA6A99ED31DCEA /* libPods-TTKeyboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A8A6F6D7AEEE7CF5EEB2749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A45B04D27565E0DEE4959FF6 /* libPods-TTKeyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D41A7F02009043B457B9E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4169E729C96BD0E8F7EED10 /* Pods-TTKeyboard.debug.xcconfig */,
+				7D643943C7491E0E1665ED3D /* Pods-TTKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3ED405E1DC8AFA1001B1051 = {
+			isa = PBXGroup;
+			children = (
+				D3ED40691DC8AFA1001B1051 /* TTKeyboard */,
+				D3ED40681DC8AFA1001B1051 /* Products */,
+				8D41A7F02009043B457B9E68 /* Pods */,
+				8A8A6F6D7AEEE7CF5EEB2749 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3ED40681DC8AFA1001B1051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3ED40671DC8AFA1001B1051 /* TTKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3ED40691DC8AFA1001B1051 /* TTKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D3ED40841DC8B139001B1051 /* TTKeyboard */,
+				D3ED406D1DC8AFA1001B1051 /* AppDelegate.h */,
+				D3ED406E1DC8AFA1001B1051 /* AppDelegate.m */,
+				D3ED40701DC8AFA1001B1051 /* ViewController.h */,
+				D3ED40711DC8AFA1001B1051 /* ViewController.m */,
+				D3ED40731DC8AFA1001B1051 /* Main.storyboard */,
+				D3ED40791DC8AFA2001B1051 /* Assets.xcassets */,
+				D3ED407B1DC8AFA2001B1051 /* LaunchScreen.storyboard */,
+				D3ED407E1DC8AFA2001B1051 /* Info.plist */,
+				D3ED40761DC8AFA1001B1051 /* TTKeyboard.xcdatamodeld */,
+				D3ED406A1DC8AFA1001B1051 /* Supporting Files */,
+			);
+			path = TTKeyboard;
+			sourceTree = "<group>";
+		};
+		D3ED406A1DC8AFA1001B1051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3ED406B1DC8AFA1001B1051 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3ED40841DC8B139001B1051 /* TTKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D3543A821DF50A4100BB9DDA /* TTKeyboard.h */,
+				D3ED40961DC8B2CC001B1051 /* TTEmoticon */,
+				D3ED40861DC8B1B5001B1051 /* TTKeyboardBar */,
+			);
+			path = TTKeyboard;
+			sourceTree = "<group>";
+		};
+		D3ED40861DC8B1B5001B1051 /* TTKeyboardBar */ = {
+			isa = PBXGroup;
+			children = (
+				D3543A831DF53F3800BB9DDA /* TBKeyboardInputBar.h */,
+				D3543A841DF53F3900BB9DDA /* TBKeyboardInputBar.m */,
+				D3543A851DF53F3900BB9DDA /* TBKeyboardTextParser.h */,
+				D3543A861DF53F3900BB9DDA /* TBKeyboardTextParser.m */,
+				D3543A871DF53F3900BB9DDA /* TBKeyboardTopView.h */,
+				D3543A881DF53F3900BB9DDA /* TBKeyboardTopView.m */,
+			);
+			path = TTKeyboardBar;
+			sourceTree = "<group>";
+		};
+		D3ED40961DC8B2CC001B1051 /* TTEmoticon */ = {
+			isa = PBXGroup;
+			children = (
+				D3ED40981DC8B2DA001B1051 /* EmoticonQQ.bundle */,
+				D3ED40991DC8B2DA001B1051 /* TBEmoticonInputView.h */,
+				D3ED409A1DC8B2DA001B1051 /* TBEmoticonInputView.m */,
+				D3ED40A61DC8B305001B1051 /* TTEmoticonHelper.h */,
+				D3ED40A71DC8B305001B1051 /* TTEmoticonHelper.m */,
+				D3ED409B1DC8B2DA001B1051 /* TBEmotionFlowLayout.h */,
+				D3ED409C1DC8B2DA001B1051 /* TBEmotionFlowLayout.m */,
+				D3ED409D1DC8B2DA001B1051 /* TBEmotionCell.h */,
+				D3ED409E1DC8B2DA001B1051 /* TBEmotionCell.m */,
+				D3ED409F1DC8B2DA001B1051 /* TBEmotionCell.xib */,
+			);
+			path = TTEmoticon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3ED40661DC8AFA1001B1051 /* TTKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ED40811DC8AFA2001B1051 /* Build configuration list for PBXNativeTarget "TTKeyboard" */;
+			buildPhases = (
+				2624AF0501C53285C4AEAEFD /* [CP] Check Pods Manifest.lock */,
+				D3ED40631DC8AFA1001B1051 /* Sources */,
+				D3ED40641DC8AFA1001B1051 /* Frameworks */,
+				D3ED40651DC8AFA1001B1051 /* Resources */,
+				46A32F54A237E677C0EE7373 /* [CP] Embed Pods Frameworks */,
+				6D42E76770387804655A2B3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTKeyboard;
+			productName = TTKeyboard;
+			productReference = D3ED40671DC8AFA1001B1051 /* TTKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3ED405F1DC8AFA1001B1051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ClaudeLi;
+				TargetAttributes = {
+					D3ED40661DC8AFA1001B1051 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = H6FCNRM4Z4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D3ED40621DC8AFA1001B1051 /* Build configuration list for PBXProject "TTKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3ED405E1DC8AFA1001B1051;
+			productRefGroup = D3ED40681DC8AFA1001B1051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3ED40661DC8AFA1001B1051 /* TTKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3ED40651DC8AFA1001B1051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ED407D1DC8AFA2001B1051 /* LaunchScreen.storyboard in Resources */,
+				D3ED40A51DC8B2DA001B1051 /* TBEmotionCell.xib in Resources */,
+				D3ED407A1DC8AFA2001B1051 /* Assets.xcassets in Resources */,
+				D3ED40A11DC8B2DA001B1051 /* EmoticonQQ.bundle in Resources */,
+				D3ED40751DC8AFA1001B1051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2624AF0501C53285C4AEAEFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46A32F54A237E677C0EE7373 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTKeyboard/Pods-TTKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D42E76770387804655A2B3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTKeyboard/Pods-TTKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3ED40631DC8AFA1001B1051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ED40A21DC8B2DA001B1051 /* TBEmoticonInputView.m in Sources */,
+				D3ED40781DC8AFA1001B1051 /* TTKeyboard.xcdatamodeld in Sources */,
+				D3ED40A41DC8B2DA001B1051 /* TBEmotionCell.m in Sources */,
+				D3543A891DF53F3900BB9DDA /* TBKeyboardInputBar.m in Sources */,
+				D3543A8B1DF53F3900BB9DDA /* TBKeyboardTopView.m in Sources */,
+				D3ED40A81DC8B305001B1051 /* TTEmoticonHelper.m in Sources */,
+				D3ED40721DC8AFA1001B1051 /* ViewController.m in Sources */,
+				D3543A8A1DF53F3900BB9DDA /* TBKeyboardTextParser.m in Sources */,
+				D3ED406F1DC8AFA1001B1051 /* AppDelegate.m in Sources */,
+				D3ED406C1DC8AFA1001B1051 /* main.m in Sources */,
+				D3ED40A31DC8B2DA001B1051 /* TBEmotionFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3ED40731DC8AFA1001B1051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ED40741DC8AFA1001B1051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3ED407B1DC8AFA2001B1051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ED407C1DC8AFA2001B1051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3ED407F1DC8AFA2001B1051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3ED40801DC8AFA2001B1051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3ED40821DC8AFA2001B1051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4169E729C96BD0E8F7EED10 /* Pods-TTKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H6FCNRM4Z4;
+				INFOPLIST_FILE = TTKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudeli.TTKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3ED40831DC8AFA2001B1051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D643943C7491E0E1665ED3D /* Pods-TTKeyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H6FCNRM4Z4;
+				INFOPLIST_FILE = TTKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudeli.TTKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3ED40621DC8AFA1001B1051 /* Build configuration list for PBXProject "TTKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ED407F1DC8AFA2001B1051 /* Debug */,
+				D3ED40801DC8AFA2001B1051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3ED40811DC8AFA2001B1051 /* Build configuration list for PBXNativeTarget "TTKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ED40821DC8AFA2001B1051 /* Debug */,
+				D3ED40831DC8AFA2001B1051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3ED40761DC8AFA1001B1051 /* TTKeyboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3ED40771DC8AFA1001B1051 /* TTKeyboard.xcdatamodel */,
+			);
+			currentVersion = D3ED40771DC8AFA1001B1051 /* TTKeyboard.xcdatamodel */;
+			path = TTKeyboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3ED405F1DC8AFA1001B1051 /* Project object */;
+}
