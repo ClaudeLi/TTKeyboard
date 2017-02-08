@@ -233,7 +233,6 @@
 }
 
 - (void)dealloc{
-    [self cancelKeyboard];
     [self removeAllNotification];
 }
 
